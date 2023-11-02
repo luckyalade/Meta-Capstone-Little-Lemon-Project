@@ -1,9 +1,3 @@
-# p
-# p
-# one
-
-### Hello
-
 # Cool Coding Readme
 
 ## Introduction
