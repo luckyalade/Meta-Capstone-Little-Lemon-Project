@@ -1,8 +1,10 @@
+import Nav from "../components/Nav";
+
 function Header() {
   return (
-    <>
-      <h1>I am the main header</h1>
-    </>
+    <div>
+      <Nav />
+    </div>
   );
 }
 
