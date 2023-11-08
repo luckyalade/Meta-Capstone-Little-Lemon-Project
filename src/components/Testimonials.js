@@ -1,10 +1,28 @@
+import Image from "../black-chef.jpg";
+
 function Testimonials() {
   return (
     <div>
-      <div className="Review_Card">
-        <div className="James_Card">
+      <div
+        className="Review_Card"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(4, auto)",
+          justifyContent: "center",
+          alignItems: "center",
+          gap: "100px",
+        }}
+      >
+        <div
+          className="James_Card"
+          style={{
+            background: "white",
+            padding: "10px 20px",
+            borderRadius: "20px",
+          }}
+        >
           <h3>Rating Stars</h3>
-          <img src="#" alt="customer pics" />
+          <img src={Image} alt="customer pics" width="200px" />
           <h4>James</h4>
           <p>Customer Review</p>
         </div>
