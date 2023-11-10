@@ -14,8 +14,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f1f1f1;
-  width: 80%;
-  margin: 0px auto;
 }
 
 code {
@@ -119,3 +117,7 @@ ul {
   margin: 4px auto;
   border-radius: 4px;
 } */
+
+#LoginBackground {
+  background-color: #333333;
+}
