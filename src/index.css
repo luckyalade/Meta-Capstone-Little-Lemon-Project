@@ -24,17 +24,17 @@ code {
 }
 
 /* Card Component Container */
-.cards {
+/* .cards {
   display: grid;
   grid-template-columns: repeat(4, auto);
   justify-content: center;
   align-items: center;
   gap: 100px;
  
-}
+} */
 
 /* Individual card */
-.cards .card {
+/* .cards .card {
    background: green;
    padding: 10px 20px;
    border-radius: 20px;
@@ -43,7 +43,7 @@ code {
    box-shadow:
     inset 2px 2px 3px rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-}
+} */
 
 /* .card:hover {
   transform: rotateY(180deg);
@@ -51,22 +51,16 @@ code {
 } */
 
 /* Button Component */
-button {
+/* button {
   border: 0;
   line-height: 2.5;
   padding: 0 20px;
-  font-size: 1rem;
   text-align: center;
   color: var(--text-color);
-  /* text-shadow: 1px 1px 1px #000; */
   border-radius: 10px;
   background-color: var(--primary-color);
-  /* background-image: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0)
-  ); */
+  outline: 6px solid #4caf4f2d;
+  font-weight: bold;
 }
 
 button:hover {
@@ -112,7 +106,7 @@ img:hover {
 }
 
 #link:hover {
-  border-bottom: 2px solid var(--primary-color);
+  color: 2px solid var(--primary-color);
   
 }
 
@@ -120,3 +114,8 @@ h1 {
   color: var(--secondary-color);
 }
 
+ul {
+  background-color: #4caf4f2d;
+  margin: 4px auto;
+  border-radius: 4px;
+} */

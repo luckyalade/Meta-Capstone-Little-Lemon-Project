@@ -1,10 +1,10 @@
 import React from "react";
-import Home from "./components/Home";
-import About from "./components/About";
-import Menu from "./components/Menu";
-import Reservations from "./components/Reservations";
-import OnlineOrders from "./components/OnlineOrders";
-import Login from "./components/Login";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Menu from "./components/Menu/Menu";
+import Reservations from "./components/Reservations/Reservations";
+import OnlineOrders from "./components/OnlineOrders/OnlineOrders";
+import Login from "./components/Login/Login";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import LittleLemonLogo from "./Little_Lemon_Logo.svg";
 
@@ -13,28 +13,9 @@ function App() {
     <Router>
       <div>
         <nav>
-          <ul
-            style={{
-              display: "flex",
-              listStyle: "none",
-              justifyContent: "space-evenly",
-              alignItems: "flex-end",
-              width: "80%",
-            }}
-          >
+          <ul>
             <img src={LittleLemonLogo} alt="" />
-            <div
-              style={{
-                width: "50%",
-                display: "flex",
-                justifyContent: "space-around",
-                alignItems: "flex-end",
-                position: "relative",
-                top: "-10px",
-                left: "100px",
-                float: "right",
-              }}
-            >
+            <div>
               <li>
                 <Link to="/" id="link">
                   Home
@@ -61,7 +42,7 @@ function App() {
                 </Link>
               </li>
               <li>
-                <Link to="/login" id="link">
+                <Link to="/login" id="link" style={{ background: "#121212" }}>
                   Login
                 </Link>
               </li>
