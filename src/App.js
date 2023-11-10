@@ -34,7 +34,7 @@ function App() {
               </li>
               <li>
                 <Link to="/onlineOrders" id="link">
-                  Place Order
+                  Order
                 </Link>
               </li>
               <li>
@@ -42,6 +42,9 @@ function App() {
                   Login
                 </Link>
               </li>
+              <div id="nav-search">
+                <input type="search" name="" id="" />
+              </div>
             </ul>
           </nav>
           <Routes>
