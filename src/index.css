@@ -1,3 +1,5 @@
+/* styles.css */
+
 :root {
   --primary-color: #fdd835; /* Lemon Yellow */
   --secondary-color: #4caf50; /* Fresh Green */
@@ -5,80 +7,44 @@
   --text-color: #333333; /* Dark Gray for text */
 }
 
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f1f1f1;
-  width: 80%;
+  background: #FAF5E9;
+  width: 100%;
   margin: 0 auto;
+  overflow-y: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-/* Navigation */
+/* Navigation.css */
 
 nav {
-   /* box-shadow: 2px 2px 5px 1px #838383;
-   padding: 0px 10px;
-   border-radius: 30px; */
-   border-bottom: 1px solid #333;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: yellow;
+}
+
+nav .link {
+  list-style: none;
+  display: flex;
+  gap: 20px;
   align-items: center;
-  height: 70px;
- 
 }
 
-li {
-  flex: 1;
+nav .logo {
+  flex: 50%;
+  align-items: center;
 }
 
-#link {
-  display: block;
-  color: #333;
-  text-align: center;
-  padding: 14px 0;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-#nav-logo{
-  float: left;
-  width: 25%;
-  background-color: #f1f1f1;
-}
-
-#nav-logo > img {
-  height: 50px;
-}
-
-#nav-search {
-  width: 25%;
-}
-
-#nav-search input {
-  float: right;
-  border: none;
-  border-radius: 10px;
-  padding: 3px;
-  outline: 1px solid #333;
-  background-color: #f1f1f1;
-}
-
-input:focus {
-  outline: 2px solid var(--primary-color);
+#homepage {
+   background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('./components/Home/Little-Lemon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
