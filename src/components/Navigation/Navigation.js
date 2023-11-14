@@ -1,9 +1,12 @@
+import Logo from "../../assets/images/Logo .svg";
+import NavigationStyle from "../Navigation/NavigationStyle.css";
+
 const Navigation = () => {
   return (
-    <div>
+    <div style={NavigationStyle}>
       <nav>
         <div>
-          <img src="" alt="" />
+          <img src={Logo} alt="" height="45x" />
         </div>
         <ul className="link">
           <li>
@@ -16,7 +19,10 @@ const Navigation = () => {
             <a href="/menu">Menu</a>
           </li>
           <li>
-            <a href="/onlineOrders">Order</a>
+            <a href="/menu">Reservations</a>
+          </li>
+          <li>
+            <a href="/onlineOrders">Online Order</a>
           </li>
           <li>
             <a href="/login">Login</a>
