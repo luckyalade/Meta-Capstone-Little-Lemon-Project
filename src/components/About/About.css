@@ -1,0 +1,48 @@
+:root {
+  --background-color: #F5F7F8;
+  --big-font: 3.3rem;
+  --h2-font: 2.6rem;
+  --p-font: 0.9rem;
+  --text-color: #302e29;
+}
+
+.about {
+  width: 100%;
+   background:  lightblue;
+   border-top-left-radius: 100px;
+}
+
+.about-us {
+  width: 80%;
+  margin: 0px auto;
+  height: 65vh;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+ 
+}
+
+.about-us h2 {
+  font-size: var(--h2-font);
+}
+
+.about-us p {
+  font-size: var(--p-font);
+  line-height: 30px;
+}
+
+.about-us > img {
+  position: relative;
+  margin: auto 0;
+}
+
+#Pizza-Icon-container {
+  position: relative;
+}
+#Pizza-Icon-Container #Pizza-Icon {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 200px;
+  bottom: -150px;
+}
