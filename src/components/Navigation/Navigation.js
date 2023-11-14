@@ -1,12 +1,40 @@
 import Logo from "../../assets/images/Logo .svg";
-import NavigationStyle from "../Navigation/NavigationStyle.css";
+import "../Navigation/NavigationStyle.css";
+import { useState, useEffect } from "react";
 
 const Navigation = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div style={NavigationStyle}>
+    <div
+      style={{
+        position: isScrolled ? "sticky" : "relative",
+        top: 0,
+        backgroundColor: isScrolled ? "rgba(0, 255, 0, 0.2)" : "transparent",
+        boxShadow: isScrolled ? "0px 2px 5px rgba(0, 0, 0, 0.1)" : "none",
+        backdropFilter: isScrolled ? "blur(10px)" : "none",
+        padding: "1px 0",
+      }}
+    >
       <nav>
         <div>
-          <img src={Logo} alt="" height="45x" />
+          <img src={Logo} alt="" height="43px" />
         </div>
         <ul className="link">
           <li>
