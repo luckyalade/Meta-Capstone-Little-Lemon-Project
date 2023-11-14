@@ -8,7 +8,7 @@
 
 .about {
   width: 100%;
-   background:  lightblue;
+   background:  #add8e6;
    border-top-left-radius: 100px;
 }
 
@@ -31,18 +31,5 @@
   line-height: 30px;
 }
 
-.about-us > img {
-  position: relative;
-  margin: auto 0;
-}
 
-#Pizza-Icon-container {
-  position: relative;
-}
-#Pizza-Icon-Container #Pizza-Icon {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  right: 200px;
-  bottom: -150px;
-}
+

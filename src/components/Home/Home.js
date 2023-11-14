@@ -9,6 +9,7 @@ export default function Home() {
         background: "linear-gradient(to top, #00A88483, #ffff00",
         overflow: "hidden",
         borderBottomRightRadius: "300px",
+        // outline: "1px solid #a09b8e67",
       }}
     >
       <div className="article">

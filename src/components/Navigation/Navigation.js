@@ -30,6 +30,7 @@ const Navigation = () => {
         boxShadow: isScrolled ? "0px 2px 5px rgba(0, 0, 0, 0.1)" : "none",
         backdropFilter: isScrolled ? "blur(10px)" : "none",
         padding: "1px 0",
+        zIndex: isScrolled ? "1000" : "1",
       }}
     >
       <nav>

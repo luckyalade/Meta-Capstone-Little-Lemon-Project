@@ -1,7 +1,5 @@
 import "./About.css";
 import LemonSlices from "./lemon-slices-img.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPizzaSlice } from "@fortawesome/free-solid-svg-icons";
 
 export default function About() {
   return (
@@ -23,18 +21,6 @@ export default function About() {
             Lemon experience. Over the years, it has evolved into a cherished
             culinary haven, inviting patrons to savor the essence of the
             Mediterranean in every delectable bite.
-            <FontAwesomeIcon
-              icon={faPizzaSlice}
-              style={{
-                width: "200px",
-                height: "200px",
-                opacity: "0.1",
-                position: "absolute",
-                right: "300px",
-                bottom: "-200px",
-                color: "grey",
-              }}
-            />
           </p>
         </div>
       </div>
