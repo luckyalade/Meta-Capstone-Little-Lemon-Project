@@ -6,18 +6,19 @@ import About from "./components/About/About";
 import Menu from "./components/Menu/Menu";
 import OnlineOrders from "./components/OnlineOrders/OnlineOrders";
 import Login from "./components/Login/Login";
-import Navigation from "./components/Navigation"; // Import the Navigation component
+import Navigation from "./components/Navigation/Navigation"; // Import the Navigation component
 import "./App.css"; // Import the app styles
+import Reservations from "./components/Reservations/Reservations";
 
 function App() {
   return (
     <div>
       <div>
-        <Navigation /> {/* Use the Navigation component */}
-        
+        <Navigation />
         <HomePage />
         <About />
         <Menu />
+        <Reservations />
         <OnlineOrders />
         <Login />
       </div>
