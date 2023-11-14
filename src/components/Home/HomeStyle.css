@@ -1,0 +1,44 @@
+:root {
+  --background-color: #00a88483;
+  --background-color: #00A884;
+  --big-font: 3.3rem;
+  --h2-font: 2.6rem;
+  --p-font: 0.9rem;
+  --text-color: #302e29;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 64vh;
+}
+
+.article {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article h1 {
+  font-size: var(--big-font);
+}
+
+.left, .right {
+  padding: 20px 10px;
+}
+
+img {
+  transition: 0.4s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.article p {
+  margin-top: -20px;
+}
+

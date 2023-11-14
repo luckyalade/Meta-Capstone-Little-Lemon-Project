@@ -11,7 +11,7 @@ const Button = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      click me
+      place an order
     </a>
   );
 };
