@@ -36,7 +36,6 @@ section {
 
 .left img:hover {
   transform: scale(1.1);
-  z-index: -10000;
 }
 
 .article p {

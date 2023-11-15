@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="about">
       <div className="about-us">
-        <div>
+        <div className="about-us-img">
           <img src={LemonSlices} alt="" width="300px" id="about-img" />
         </div>
         <div>

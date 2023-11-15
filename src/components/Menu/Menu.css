@@ -8,11 +8,11 @@
 
 .menu-bg {
   width: 100%;
-  background-color: rgb(238, 241, 73);
+  background-color: #E4FFE1;
   height: 150vh;
   margin-top: -35px;
-  border-bottom-right-radius: 30px;
-  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 200px;
+  border-top-left-radius: 100px;
 }
 
 .main-container {
@@ -36,7 +36,7 @@
   display: block;
   width: 230px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0 auto;
   background: linear-gradient(to bottom, lightgreen, rgba(235, 235, 105, 0.882));
   box-shadow: inset 0px 10px 10px 2px rgba(255, 255, 0, 0.125);
@@ -52,6 +52,9 @@
 .card img {
   border-radius: 10px;
   margin-left: 10px;
+  padding: 0px 0px;
+  clip-path: circle(40%);
+  outline: 2px solid #a09b8e67;
 }
 
 .card h3, p {
@@ -64,6 +67,16 @@
 }
 
 .card p {
-  font-size: var(--text-color);
+  font-size: var(--p-font);
   line-height: 1.5;
 }
+
+h3 span {
+  float: right;
+  margin-right: 12px;
+}
+
+/* h4 span {
+  float: right;
+  margin-right: 56px;
+} */
