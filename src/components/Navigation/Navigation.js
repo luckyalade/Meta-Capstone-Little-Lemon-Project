@@ -59,10 +59,10 @@ const Navigation = () => {
             <a href="/menu">Reservations</a>
           </li>
           <li>
-            <a href="/onlineOrders">Online Order</a>
+            <a href="/onlineOrders">Testimonials</a>
           </li>
           <li>
-            <a href="/login">Login</a>
+            <a href="/login">Contact</a>
           </li>
         </ul>
       </nav>
