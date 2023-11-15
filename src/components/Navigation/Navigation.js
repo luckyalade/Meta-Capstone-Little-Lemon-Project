@@ -31,6 +31,14 @@ const Navigation = () => {
         backdropFilter: isScrolled ? "blur(10px)" : "none",
         padding: "1px 0",
         zIndex: isScrolled ? "1000" : "1",
+        // Separate properties for background
+        backgroundAttachment: "initial",
+        backgroundClip: "initial",
+        backgroundImage: "initial",
+        backgroundOrigin: "initial",
+        backgroundPosition: "initial",
+        backgroundRepeat: "initial",
+        backgroundSize: "initial",
       }}
     >
       <nav>

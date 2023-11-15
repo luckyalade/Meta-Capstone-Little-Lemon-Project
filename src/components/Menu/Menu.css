@@ -9,7 +9,7 @@
 .menu-bg {
   width: 100%;
   background-color: #E4FFE1;
-  height: 150vh;
+  height: 160vh;
   margin-top: -35px;
   border-bottom-right-radius: 200px;
   border-top-left-radius: 100px;
@@ -71,7 +71,7 @@
   line-height: 1.5;
 }
 
-h3 span {
+.card h3 span {
   float: right;
   margin-right: 12px;
 }

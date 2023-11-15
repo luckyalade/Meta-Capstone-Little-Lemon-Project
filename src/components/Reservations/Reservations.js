@@ -4,11 +4,9 @@ import "./ReservationStyle.css";
 const ReservationForm = () => {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
   const [guests, setGuests] = useState("");
-  const [comments, setComments] = useState("");
+
   const [seatingPreference, setSeatingPreference] = useState("inside");
-  const [showModal, setShowModal] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,37 +14,31 @@ const ReservationForm = () => {
     console.log("Reservation submitted:", {
       name,
       date,
-      time,
       guests,
-      comments,
       seatingPreference,
     });
-
-    // Show the modal after submission
-    setShowModal(true);
-  };
-
-  const closeModal = () => {
-    // Close the modal and reset the form
-    setShowModal(false);
-    setName("");
-    setDate("");
-    setTime("");
-    setGuests("");
-    setComments("");
-    setSeatingPreference("inside");
   };
 
   return (
     <div className="Reservation-Form">
-      <h2>Reservation Form</h2>
       <div className="reservation-section">
         <div className="reservation-details">
-          <h3>Reserve a table</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-            incidunt modi! Molestias nihil obcaecati mollitia libero perferendis
-            corporis eius possimus.
+          <h2>Reservation Form</h2>
+          {/* <h3>Reserve a table</h3> */}
+          <p
+            style={{
+              lineHeight: "1.5",
+              width: "500px",
+              marginLeft: "0px",
+            }}
+          >
+            Lorem ipsum dolor sit amet consectetur <br />
+            adipisicing elit. Commodi officiis deleniti ex repellendus
+            accusantium exercitationem possimus, <br />
+            sequi unde vero ipsa maxime optio odio dolorem assumenda at dolore
+            eum recusandae expedita, quis ducimus natus fuga illum quidem.
+            Voluptas saepe exercitationem, unde praesentium ad corrupti, eius
+            ex, accusamus tempora sapiente fuga minus?
           </p>
         </div>
         <div className="form">
@@ -59,6 +51,7 @@ const ReservationForm = () => {
               onChange={(e) => setName(e.target.value)}
               required
             />
+            <br />
             <br />
             <label>Date:</label>
             <br />
@@ -79,6 +72,7 @@ const ReservationForm = () => {
               required
             />
             <br />
+            <br />
             <label>Seating Preference:</label>
             <br />
             <select
@@ -93,19 +87,6 @@ const ReservationForm = () => {
           </form>
         </div>
       </div>
-
-      {/* Modal */}
-      {showModal && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={closeModal}>
-              &times;
-            </span>
-            <p>Thank you for your reservation!</p>
-            {/* You can customize the content of the modal as needed */}
-          </div>
-        </div>
-      )}
     </div>
   );
 };

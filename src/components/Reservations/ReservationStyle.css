@@ -8,9 +8,13 @@
 
 .Reservation-Form {
   width: 100%;
-  background-color: rgb(160, 214, 247);
+  background: linear-gradient(to bottom, lightgreen, rgba(235, 235, 105, 0.882));
   height: 85vh;
   margin-top: -18px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  
 }
 .reservation-section {
   display: flex;
@@ -19,9 +23,12 @@
   margin: 0 auto;
 }
 
+.reservation-details h2 {
+ font-size: var(--h2-font);
+}
+
 .form {
-  width: 500px;
-  height: 300px;
+  width: 450px;
 }
 
 .form p {
@@ -29,19 +36,28 @@
 }
 
 .form form {
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 30px 20px;
   border-radius: 20px;
   outline: 2px solid #a09b8e67;
+  width: 250px;
+  position: relative;
+  left: 180px;
+  top: 30px;
 }
 
 label {
-  margin-bottom: -10px;
+  margin-bottom: 10px;
+  margin-left: 13px;
+  color: var(--background-color);
+  font-size: var(--p-font);
+  position: relative;
+  top: -5px;
+  
 }
 
-input, select, option, textarea, button {
+form input, select, option, textarea {
   width: 90%;
   padding: 8px 3px;
   display: block;
@@ -49,4 +65,27 @@ input, select, option, textarea, button {
   border: none;
   border-radius: 4px;
   outline: 2px solid #a09b8e67;
+  margin-bottom: -8px;
+  
 }
+
+form button {
+  width: 110px;
+  display: block;
+  margin-left: 13px;
+  padding: 8px;
+  border-radius: 10px;
+  /* outline: 2px solid #a09b8e67; */
+  outline: 2px solid var(--text-color);
+  border: none;
+  margin-top: 13px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+form button:hover {
+  background-color: transparent;
+  outline: 2px solid var(--text-color);
+}
+
+
