@@ -1,6 +1,7 @@
 import Logo from "../../assets/images/Logo .svg";
 import "../Navigation/NavigationStyle.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,22 +48,70 @@ const Navigation = () => {
         </div>
         <ul className="link">
           <li>
-            <a href="/">Home</a>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <a href="/menu">Menu</a>
+            <Link
+              to="menu"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Menu
+            </Link>
           </li>
           <li>
-            <a href="/menu">Reservations</a>
+            <Link
+              to="reservations"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Reservations
+            </Link>
           </li>
           <li>
-            <a href="/onlineOrders">Testimonials</a>
+            <Link
+              to="testimonials"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Testimonials
+            </Link>
           </li>
           <li>
-            <a href="/login">Contact</a>
+            <Link
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </nav>

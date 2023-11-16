@@ -12,6 +12,8 @@
   align-items: flex-start;
   gap: 60px;
   background-color: #959494;
+  /* background-color: #8b8a8a; */
+  /* background-color: #2b2a2a; */
   color: var(--text-color);
   padding: 10px 0px;
   border-bottom-left-radius: 100px;
@@ -22,31 +24,36 @@
   margin: auto 0px;
 }
 .footer-logo img {
-  width: 180px;
+  width: 160px;
 }
 
 .doormat-navigation,
 .contact-navigation,
 .social-media-navigation {
-  color: #fff;
+  color: #f4f2f2;
+  font-size: 0.85rem;
+  /* color: #1b1bbe; */
 }
 
 
 .footer .doormat-navigation p {
   font-size: var(--p-font);
   margin-left: 0px;
-  color: #fff;
+  color: #f1f1f1;
+  cursor: pointer;
 }
 
 .footer .contact-navigation p {
   font-size: var(--p-font);
   margin-left: 0px;
   line-height: 1.5;
-  color: #fff;
+  color: #f1f1f1;
+  cursor: pointer;
 }
 
 .footer .social-media-navigation p {
   font-size: var(--p-font);
   margin-left: 0px;
-  color: #fff;
+  color: #f1f1f1;
+  cursor: pointer;
 }

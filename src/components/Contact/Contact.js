@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAddressBook,
   faEnvelope,
-  faHome,
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -35,7 +35,7 @@ export default function Login() {
           <h3>Contact</h3>
           <p>
             <span style={{ color: "#4F625C" }}>
-              <FontAwesomeIcon icon={faHome} />
+              <FontAwesomeIcon icon={faLocationDot} />
             </span>
             {"  "}
             Boulevard Crescent, <br />
@@ -59,21 +59,21 @@ export default function Login() {
         <div className="social-media-navigation">
           <h3>Social Media Links</h3>
           <p>
-            <span style={{ color: "blue" }}>
+            <span style={{ color: "#1b1bbe" }}>
               <FontAwesomeIcon icon={["fab", "facebook"]} />
             </span>
             {"   "}
             Facebook
           </p>
           <p>
-            <span style={{ color: "brown" }}>
+            <span style={{ color: "l#7D40B9" }}>
               <FontAwesomeIcon icon={["fab", "instagram"]} />
             </span>
             {"   "}
             Instagram
           </p>
           <p>
-            <span style={{ color: "blue" }}>
+            <span style={{ color: "lightblue" }}>
               <FontAwesomeIcon icon={["fab", "twitter"]} />
             </span>
             {"   "}

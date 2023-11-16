@@ -29,6 +29,7 @@ li a {
   font-size: var(--p-font);
   font-weight: 600;
   transition: transform 0.3s ease; 
+  cursor: pointer;
 }
 
 li a::before {
