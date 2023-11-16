@@ -1,0 +1,36 @@
+:root {
+  --background-color: #F5F7F8;
+  --big-font: 3.3rem;
+  --h2-font: 2.6rem;
+  --p-font: 0.9rem;
+  --text-color: #302e29;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  background-color: #333;
+  color: white;
+  padding: 10px 0px;
+}
+
+.footer-logo  {
+  margin: auto 0px;
+}
+.footer-logo img {
+  width: 220px;
+}
+
+.footer .doormat-navigation p {
+  font-size: var(--p-font);
+}
+
+.footer .contact-navigation p{
+  font-size: var(--p-font);
+}
+
+.footer .social-media-navigation {
+  font-size: var(--p-font);
+}

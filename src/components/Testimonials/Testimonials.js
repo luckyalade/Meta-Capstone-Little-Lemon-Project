@@ -7,7 +7,7 @@ const testimonials = [
   {
     name: "Aaliyah",
     comment:
-      "'Little Lemon wowed me! Flavors danced, service shone—a truly unforgettable dining experience, exceeding expectations.'",
+      "'Little Lemon wowed me! Flavors danced, service shone—a truly unforgettable dining experience.'",
     rating: 5,
     image: require("./Images/Aaliyah.jpg"),
   },
@@ -28,7 +28,7 @@ const testimonials = [
   {
     name: "Martha",
     comment:
-      "'Extraordinary! Little Lemon's tastes, welcoming atmosphere—a memorable, delicious adventure. Highly recommend the experience.'",
+      "'Extraordinary! Little Lemon's tastes, welcoming atmosphere—a memorable, delicious adventure.'",
     rating: 5,
     image: require("./Images/Martha.jpg"),
   },
