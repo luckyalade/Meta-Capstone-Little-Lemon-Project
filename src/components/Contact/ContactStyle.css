@@ -11,26 +11,35 @@
   justify-content: center;
   align-items: flex-start;
   gap: 60px;
-  background-color: #333;
+  /* background-color: #6d6d6d; */
+  /* background-color: #6d6d6d; */
+  background-color: rgb(207, 99, 240);
   color: white;
   padding: 10px 0px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 30px;
 }
 
 .footer-logo  {
   margin: auto 0px;
 }
 .footer-logo img {
-  width: 220px;
+  width: 180px;
+  color: white;
 }
 
 .footer .doormat-navigation p {
   font-size: var(--p-font);
+  margin-left: 0px;
 }
 
-.footer .contact-navigation p{
+.footer .contact-navigation p {
   font-size: var(--p-font);
+  margin-left: 0px;
+  line-height: 1.5;
 }
 
-.footer .social-media-navigation {
+.footer .social-media-navigation p {
   font-size: var(--p-font);
+  margin-left: 0px;
 }
