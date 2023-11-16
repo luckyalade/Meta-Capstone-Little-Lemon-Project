@@ -7,6 +7,13 @@ import {
   faEnvelope,
   faHome,
 } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+library.add(faFacebook, faTwitter, faInstagram);
 
 export default function Login() {
   return (
@@ -27,7 +34,7 @@ export default function Login() {
         <div className="contact-navigation">
           <h3>Contact</h3>
           <p>
-            <span>
+            <span style={{ color: "#4F625C" }}>
               <FontAwesomeIcon icon={faHome} />
             </span>
             {"  "}
@@ -35,11 +42,14 @@ export default function Login() {
             Little Lemon HQ.
           </p>
           <p>
-            <FontAwesomeIcon icon={faAddressBook} />
+            <span style={{ color: "#4F625C" }}>
+              <FontAwesomeIcon icon={faAddressBook} />
+            </span>
+
             <span> +123123123</span>
           </p>
           <p>
-            <span>
+            <span style={{ color: "#4F625C" }}>
               <FontAwesomeIcon icon={faEnvelope} />
             </span>
             {"  "}
@@ -48,9 +58,27 @@ export default function Login() {
         </div>
         <div className="social-media-navigation">
           <h3>Social Media Links</h3>
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>Twitter</p>
+          <p>
+            <span style={{ color: "blue" }}>
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </span>
+            {"   "}
+            Facebook
+          </p>
+          <p>
+            <span style={{ color: "brown" }}>
+              <FontAwesomeIcon icon={["fab", "instagram"]} />
+            </span>
+            {"   "}
+            Instagram
+          </p>
+          <p>
+            <span style={{ color: "blue" }}>
+              <FontAwesomeIcon icon={["fab", "twitter"]} />
+            </span>
+            {"   "}
+            Twitter
+          </p>
         </div>
       </div>
     </div>
