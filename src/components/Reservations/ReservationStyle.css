@@ -81,7 +81,7 @@ form button {
   padding: 8px;
   border-radius: 10px;
   /* outline: 2px solid #a09b8e67; */
-  outline: 2px solid var(--text-color);
+  /* outline: 2px solid var(--text-color); */
   border: none;
   margin-top: 13px;
   background-color: var(--text-color);
@@ -90,7 +90,7 @@ form button {
 
 form button:hover {
   background-color: transparent;
-  outline: 2px solid var(--text-color);
+  /* outline: 2px solid var(--text-color); */
 }
 
 @media (max-width: 768px) {
