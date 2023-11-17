@@ -16,21 +16,21 @@ const testimonials = [
     comment:
       "'Culinary masterpiece! Little Lemon's detail, warm hospitality left me craving more. A memorable, delightful visit.'",
     rating: 5,
-    image: require("./Images/Mark_Latest.jpg"),
+    image: require("./Images/Mark_Newest.jpg"),
   },
   {
     name: "Rodriquez",
     comment:
       "'Little Lemon, haven of excellence. Each bite told a story of passion. Friendly staff, home.'",
     rating: 5,
-    image: require("./Images/Rodriquez_New.jpg"),
+    image: require("./Images/Spencer.jpg"),
   },
   {
     name: "Martha",
     comment:
       "'Extraordinary! Little Lemon's tastes, welcoming atmosphere—a memorable, delicious adventure.'",
     rating: 5,
-    image: require("./Images/Martha_New.jpg"),
+    image: require("./Images/Martha_Newest.jpg"),
   },
   // Add more testimonials with images if needed
 ];

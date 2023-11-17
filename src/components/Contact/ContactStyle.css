@@ -69,6 +69,7 @@
     height: 40vh;
     text-align: center;
     border-bottom-left-radius: 20px;
+    width: 100%;
   }
 
   .footer-logo  {

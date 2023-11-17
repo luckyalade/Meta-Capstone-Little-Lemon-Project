@@ -66,7 +66,7 @@ export default function Login() {
             Facebook
           </p>
           <p>
-            <span style={{ color: "l#7D40B9" }}>
+            <span style={{ color: "brown" }}>
               <FontAwesomeIcon icon={["fab", "instagram"]} />
             </span>
             {"   "}
