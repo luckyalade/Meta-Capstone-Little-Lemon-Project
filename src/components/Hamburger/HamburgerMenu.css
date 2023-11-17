@@ -11,8 +11,8 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
-  transform: rotate(0deg);
-  transition: 0.5s ease-in-out;
+  /* transform: rotate(0deg); */
+  /* transition: 0.5s ease-in-out; */
 }
 
 .hamburger-icon span {
@@ -20,12 +20,12 @@
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #333;
+  /* background: #333; */
   background: #626262;
   /* background: #F4CE14; */
   opacity: 1;
   left: 0;
-  transform: rotate(0deg);
+  /* transform: rotate(0deg); */
   transition: 0.2s ease;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .hamburger-menu.open .hamburger-icon {
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
 }
 
 .hamburger-menu.open .hamburger-icon span:nth-child(1) {
@@ -56,11 +56,11 @@
 }
 
 .hamburger-menu.open .hamburger-icon span:nth-child(2) {
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
 }
 
 .hamburger-menu.open .hamburger-icon span:nth-child(3) {
-  transform: rotate(-45deg);
+  /* transform: rotate(-45deg); */
 }
 
 .hamburger-menu.open .hamburger-icon span:nth-child(4) {
