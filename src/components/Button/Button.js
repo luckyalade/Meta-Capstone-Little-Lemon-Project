@@ -1,19 +1,27 @@
 import React, { useState } from "react";
-import "./Button.css"; // Create a separate CSS file for styling
+import PropTypes from "prop-types";
+import "./Button.css";
 
-const Button = () => {
+const Button = ({ link, text, customClass, customId }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <a
-      href="https://"
-      className={`custom-button ${isHovered ? "hovered" : ""}`}
+      href={link}
+      className={`custom-button ${isHovered ? "hovered" : ""} ${customClass}`}
+      id={`custom-button ${isHovered ? "hovered" : ""} ${customId}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      place an order
+      {text}
     </a>
   );
+};
+
+Button.propTypes = {
+  link: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  customClass: PropTypes.string,
 };
 
 export default Button;

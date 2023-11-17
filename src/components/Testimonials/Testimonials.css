@@ -75,3 +75,36 @@
   color: yellowgreen;
 }
 
+@media (max-width: 768px) {
+  .testimonial-bg {
+    height: auto;
+  }
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -28px;
+  }
+
+  .testimonial-info h4 {
+    text-align: center;
+  }
+
+  .testimonial h3 {
+    text-align: center;
+    position: relative;
+    left: -11px;
+  }
+
+  .testimonial-comment {
+    text-align: center;
+  }
+
+  .testimonial-bg h2 {
+    text-align: center;
+    position: relative;
+    top: -33px;
+    left: -58px;
+  }
+}

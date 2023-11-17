@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section
       style={{
-        background: "linear-gradient(to top, #00A88483, #ffff00",
+        background: "linear-gradient(to top, #00A88483, #ffff00)",
         overflow: "hidden",
         borderBottomRightRadius: "300px",
         // outline: "1px solid #a09b8e67",
@@ -23,7 +23,12 @@ export default function Home() {
             veritatis voluptatibus maxime natus eligendi ratione magni nobis id
             vero ut ex.
           </p>
-          <Button />
+          <Button
+            link="/"
+            text="place an order"
+            customClass="custom-style"
+            id="customId"
+          />
         </div>
         <div className="left">
           <img src={HeroImage} alt="" width="450px" />

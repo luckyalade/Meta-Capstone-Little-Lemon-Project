@@ -21,15 +21,16 @@ const ReservationForm = () => {
 
   return (
     <div className="Reservation-Form">
-      <div className="reservation-section">
+      <div className="reservation-section" id="reservation-section">
         <div className="reservation-details">
           <h2>Reservation Form</h2>
           {/* <h3>Reserve a table</h3> */}
           <p
             style={{
               lineHeight: "1.5",
-              width: "500px",
-              marginLeft: "0px",
+              // width: "500px",
+              // maxWidth: "500px",
+              // marginLeft: "0px",
             }}
           >
             Lorem ipsum dolor sit amet consectetur <br />

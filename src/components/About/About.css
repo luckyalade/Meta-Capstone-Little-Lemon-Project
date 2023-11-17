@@ -12,7 +12,7 @@
    border-top-left-radius: 100px;
 }
 
-.about-us {
+.about .about-us {
   width: 80%;
   margin: 0px auto;
   height: 65vh;
@@ -36,6 +36,29 @@
 .about-us p {
   font-size: var(--p-font);
   line-height: 30px;
+}
+
+@media (max-width: 768px) {
+ .about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+ }
+
+ .about .about-us {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+ }
+
+ .about-us-img img {
+  width: 200px;
+  /* margin-top: 10px; */
+  position: relative;
+  top: 44px;
+}
 }
 
 
