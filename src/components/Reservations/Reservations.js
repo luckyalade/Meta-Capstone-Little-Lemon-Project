@@ -44,7 +44,7 @@ const ReservationForm = () => {
         </div>
         <div className="form">
           <form onSubmit={handleSubmit}>
-            <label>Name:</label>
+            <label>First Name:</label>
             <br />
             <input
               type="text"
@@ -54,10 +54,10 @@ const ReservationForm = () => {
             />
             <br />
             <br />
-            <label>Date:</label>
+            <label>Last Name:</label>
             <br />
             <input
-              type="date"
+              type="text"
               value={date}
               onChange={(e) => setDate(e.target.value)}
               required
