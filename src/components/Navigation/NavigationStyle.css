@@ -51,4 +51,9 @@ li a:hover {
   transform: translateX(10px);
 }
 
+@media (max-width: 768px) {
+  ul {
+    display: none;
+  }
+}
 

@@ -1,11 +1,14 @@
-import Logo from "../../assets/images/Logo .svg";
-import "../Navigation/NavigationStyle.css";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import "./HamburgerMenu.css";
 import { Link } from "react-scroll";
-import HamburgerMenu from "../Hamburger/HamburgerMenu";
 
-const Navigation = () => {
+const HamburgerMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,30 +28,30 @@ const Navigation = () => {
 
   return (
     <div
-      style={{
-        position: isScrolled ? "sticky" : "relative",
-        top: 0,
-        backgroundColor: isScrolled ? "rgba(0, 255, 0, 0.2)" : "transparent",
-        boxShadow: isScrolled ? "0px 2px 5px rgba(0, 0, 0, 0.1)" : "none",
-        backdropFilter: isScrolled ? "blur(10px)" : "none",
-        padding: "1px 0",
-        zIndex: isScrolled ? "1000" : "1",
-        // Separate properties for background
-        backgroundAttachment: "initial",
-        backgroundClip: "initial",
-        backgroundImage: "initial",
-        backgroundOrigin: "initial",
-        backgroundPosition: "initial",
-        backgroundRepeat: "initial",
-        backgroundSize: "initial",
-      }}
+      className={`hamburger-menu ${isOpen ? "open" : ""}`}
+      onClick={handleMenuToggle}
     >
-      <nav>
-        <div>
-          <img src={Logo} alt="" height="43px" />
-        </div>
-        <ul className="link">
+      <div className="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div className={`menu-items ${isOpen ? "open" : ""}`}>
+        <ul
+          style={{
+            color: "#333",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            padding: "20px 30px",
+            outline: isScrolled ? "2px solid ##a09b8e67" : "",
+            backdropFilter: "blur(10px)",
+            borderTopLeftRadius: "40px",
+          }}
+        >
           <li>
+            {" "}
             <Link
               to="home"
               spy={true}
@@ -60,6 +63,7 @@ const Navigation = () => {
             </Link>
           </li>
           <li>
+            {" "}
             <Link
               to="about"
               spy={true}
@@ -97,7 +101,7 @@ const Navigation = () => {
               to="testimonials"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-20}
               duration={500}
             >
               Testimonials
@@ -108,17 +112,16 @@ const Navigation = () => {
               to="contact"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-20}
               duration={500}
             >
               Contact
             </Link>
           </li>
         </ul>
-        <HamburgerMenu />
-      </nav>
+      </div>
     </div>
   );
 };
 
-export default Navigation;
+export default HamburgerMenu;

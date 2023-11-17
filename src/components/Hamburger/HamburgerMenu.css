@@ -1,0 +1,108 @@
+.hamburger-menu {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  top: 3px;
+  /* display: none; */
+}
+
+.hamburger-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+}
+
+.hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #333;
+  background: #626262;
+  /* background: #F4CE14; */
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.2s ease;
+}
+
+.hamburger-icon span:nth-child(1) {
+  top: 1px;
+  width: 15px;
+}
+
+.hamburger-icon span:nth-child(2),
+.hamburger-icon span:nth-child(3) {
+  top: 8px;
+  width: 15px;
+}
+
+.hamburger-icon span:nth-child(4) {
+  top: 15px;
+  width: 15px;
+}
+
+.hamburger-menu.open .hamburger-icon {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.open .hamburger-icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.hamburger-menu.open .hamburger-icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.hamburger-menu.open .hamburger-icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.hamburger-menu.open .hamburger-icon span:nth-child(4) {
+  top: 15px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 43px; /* Adjust this value based on your layout */
+  left: -10px;
+  background: #333;
+  background: #ADD8E6;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.9;
+  visibility: hidden; /* Hide the menu by default */
+  transition: 0.5s ease-in-out;
+  /* outline: 2px solid #a09b8e67; */
+  margin-left: -86px;
+}
+
+.hamburger-menu.open .menu-items {
+  visibility: visible;
+}
+
+@media (min-width: 768px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 765px) and (max-width: 1024px) {
+  /* Add your tablet-specific styles here */
+  /* For example: */
+  .hamburger-menu {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  top: 3px;
+}
+}

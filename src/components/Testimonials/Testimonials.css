@@ -108,3 +108,18 @@
     left: -58px;
   }
 }
+
+
+@media (max-width: 990px) {
+
+  .testimonial-bg {
+    height: 170vh;
+  }
+  .testimonial-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: -28px;
+  }
+}

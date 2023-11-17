@@ -43,13 +43,16 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 800px;
+  /* height: auto; */
  }
 
  .about .about-us {
   display: flex;
   flex-direction: column;
-  height: auto;
+
+  /* height: 700px; */
+  /* height: auto; */
   text-align: center;
  }
 
