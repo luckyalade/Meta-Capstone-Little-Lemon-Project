@@ -122,9 +122,12 @@ form button:hover {
   }
 
   .form {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    left: -110px;
+    left: -100px;
+    margin: 0 auto;
   }
 
   .reservation-details h2, p {
