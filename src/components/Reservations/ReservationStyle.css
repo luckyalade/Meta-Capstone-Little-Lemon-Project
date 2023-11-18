@@ -13,7 +13,7 @@
   margin-top: -18px;
   border-bottom-left-radius: 100px;
   border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  /* border-top-left-radius: 20px; */
   
 }
 .reservation-section {
@@ -102,7 +102,7 @@ form button:hover {
     margin-top: 10px;
     padding: 15px 0px;
     /* border-top-left-radius: 60px; */
-    border-top-right-radius: 80px;
+    /* border-top-right-radius: 80px; */
   }
 
   .reservation-section {
