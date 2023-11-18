@@ -97,7 +97,7 @@
     justify-content: center;
   }
 
-  .rating-mobile h4 span {
-    text-align: center;
+  .Card-Container .card p {
+    text-align: left;
   }
 }
