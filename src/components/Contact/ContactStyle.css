@@ -63,10 +63,10 @@
     display: flex;
     gap: 2px;
     padding: 20px 5px;
-    position: absolute;
-    margin-top: 420px;
+    position: relative;
+    margin-top: 720px;
     z-index: -1;
-    height: 40vh;
+    height: 250px;
     text-align: center;
     border-bottom-left-radius: 20px;
     width: 100%;
