@@ -11,8 +11,9 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 20px;
-  height: 68vh;
+  /* height: 68vh; */
 }
 
 .article {
