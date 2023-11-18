@@ -32,6 +32,7 @@ export default function Menu() {
                 color: "yellowgreen",
                 marginLeft: "9px",
               }}
+              className="rating-mobile"
             >
               <h4>
                 Ratings:{" "}
