@@ -117,7 +117,7 @@ form button:hover {
   }
 
  .Reservation-Form #reservation-section {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
   }
 
