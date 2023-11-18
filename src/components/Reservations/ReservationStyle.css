@@ -100,7 +100,7 @@ form button:hover {
     justify-content: center;
     height: 700px;
     margin-top: 10px;
-    padding: 60px 0px;
+    padding: 90px 0px;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
   }
@@ -117,8 +117,9 @@ form button:hover {
   }
 
  .Reservation-Form #reservation-section {
-    display: inline-block;
+    display: block;
     margin: 0 auto;
+    padding: 40px 0px;
   }
 
   .form {
