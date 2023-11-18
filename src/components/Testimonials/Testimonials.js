@@ -23,7 +23,7 @@ const testimonials = [
     comment:
       "'Little Lemon, haven of excellence. Each bite told a story of passion. Friendly staff, home.'",
     rating: 5,
-    image: require("./Images/Spencer.jpg"),
+    image: require("./Images/Rodriquez_New.jpg"),
   },
   {
     name: "Martha",
