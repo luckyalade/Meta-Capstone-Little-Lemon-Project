@@ -96,4 +96,8 @@
     grid-template-columns: auto ;
     justify-content: center;
   }
+
+  .card h4 {
+    text-align: center;
+  }
 }
