@@ -69,8 +69,8 @@
     padding: 20px 0px;
     position: relative;
     top: 740px;
-    z-index: -1;
-    height: 250px;
+    z-index: 0;
+    /* height: 250px; */
     /* text-align: left; */
     border-bottom-left-radius: 20px;
     width: 98%;
@@ -95,19 +95,19 @@
 
 }
 
-.contact-navigation span {
+/* .contact-navigation span {
   display: none;
-}
+} */
 
 .footer .doormat-navigation p {
   text-align: left;
   position: relative;
-  left: 30px;
+  left: 27px;
 }
 
 .footer .doormat-navigation h3 {
   position: relative;
-  left: 40px;
+  left: 33px;
 }
 
 
