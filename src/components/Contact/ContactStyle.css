@@ -66,9 +66,9 @@
   .footer {
     display: flex;
     gap: 0px;
-    /* padding: 20px 5px; */
+    padding: 20px 0px;
     position: relative;
-    margin-top: 690px;
+    margin-top: 790px;
     z-index: -1;
     height: 250px;
     /* text-align: left; */
