@@ -52,13 +52,14 @@ section {
     flex-direction: column;
     width: 92%;
     height: auto;
-    margin: 0 auto;
+    
   }
   
   .article {
     flex-direction: column;
     padding: 20px;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .article h1 {

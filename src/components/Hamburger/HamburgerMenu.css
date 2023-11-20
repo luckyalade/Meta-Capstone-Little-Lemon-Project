@@ -46,21 +46,21 @@
 }
 
 .hamburger-menu.open .hamburger-icon {
-  transform: rotate(45deg);
+  transform: rotate(0deg);
 }
 
 .hamburger-menu.open .hamburger-icon span:nth-child(1) {
-  top: 18px;
+  /* top: 18px; */
   width: 0%;
-  left: 50%;
+  /* left: -20%; */
 }
 
 .hamburger-menu.open .hamburger-icon span:nth-child(2) {
-  transform: rotate(45deg);
+  transform: rotate(0deg);
 }
 
 .hamburger-menu.open .hamburger-icon span:nth-child(3) {
-  transform: rotate(-45deg);
+  transform: rotate(0deg);
 }
 
 .hamburger-menu.open .hamburger-icon span:nth-child(4) {
@@ -81,7 +81,7 @@
   border-radius: 10px;
   opacity: 0.9;
   visibility: hidden; /* Hide the menu by default */
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
   /* outline: 2px solid #a09b8e67; */
   margin-left: -86px;
 }

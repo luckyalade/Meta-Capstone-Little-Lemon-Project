@@ -11,12 +11,17 @@ const ReservationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add your reservation logic here (e.g., send data to a server, etc.)
-    console.log("Reservation submitted:", {
+    const reservationDetails = {
       name,
       date,
       guests,
       seatingPreference,
-    });
+    };
+
+    console.log("Reservation submitted:", reservationDetails);
+
+    // Display form submit details as an alert
+    alert(`Reservation submitted\nThank you!`);
   };
 
   return (
@@ -24,15 +29,7 @@ const ReservationForm = () => {
       <div className="reservation-section" id="reservation-section">
         <div className="reservation-details">
           <h2>Reservation Form</h2>
-          {/* <h3>Reserve a table</h3> */}
-          <p
-            style={{
-              lineHeight: "1.5",
-              // width: "500px",
-              // maxWidth: "500px",
-              // marginLeft: "0px",
-            }}
-          >
+          <p style={{ lineHeight: "1.5" }}>
             Lorem ipsum dolor sit amet consectetur <br />
             adipisicing elit. Commodi officiis deleniti ex repellendus
             accusantium exercitationem possimus, <br />
