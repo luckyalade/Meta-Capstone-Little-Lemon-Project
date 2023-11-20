@@ -66,14 +66,14 @@
   .footer {
     display: flex;
     gap: 0px;
-    padding: 20px 5px;
+    /* padding: 20px 5px; */
     position: relative;
-    margin-top: 660px;
-    z-index: -1;
+    margin-top: 690px;
+    /* z-index: -1; */
     height: 250px;
-    text-align: center;
+    /* text-align: left; */
     border-bottom-left-radius: 20px;
-    width: 100%;
+    width: 98%;
   }
 
   .footer-logo  {
@@ -85,16 +85,31 @@
 
 .footer .contact-navigation {
   /* display: none; */
-  text-align: center;
+  text-align: left;
+  padding: 0px 10px;
+}
+
+.footer .contact-navigation h3 {
+  text-align: left;
+  padding: 0px 20px
 }
 
 .contact-navigation span {
   display: none;
 }
 
+.footer .doormat-navigation p {
+  text-align: left;
+}
+
+
 .footer .contact-navigation p {
-  text-align: center;
+  text-align: left;
   padding: 0px 10px;
+}
+
+.footer .social-media-navigation p {
+  text-align: left;
 }
 
 }
