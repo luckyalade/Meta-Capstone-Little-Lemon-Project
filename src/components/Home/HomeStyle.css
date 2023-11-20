@@ -50,7 +50,7 @@ section {
   section {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 92%;
     height: auto;
     
   }
@@ -58,7 +58,7 @@ section {
   .article {
     flex-direction: column;
     padding: 20px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
   }
 
