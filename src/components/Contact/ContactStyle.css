@@ -68,8 +68,8 @@
     gap: 0px;
     padding: 20px 0px;
     position: relative;
-    top: 740px;
-    z-index: 0;
+    top: 724px;
+    z-index: 1;
     /* height: 250px; */
     /* text-align: left; */
     border-bottom-left-radius: 20px;
@@ -102,12 +102,12 @@
 .footer .doormat-navigation p {
   text-align: left;
   position: relative;
-  left: 27px;
+  left: 20px;
 }
 
 .footer .doormat-navigation h3 {
   position: relative;
-  left: 33px;
+  left: 28px;
 }
 
 
