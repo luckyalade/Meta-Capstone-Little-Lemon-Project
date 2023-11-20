@@ -69,7 +69,7 @@
     /* padding: 20px 5px; */
     position: relative;
     margin-top: 690px;
-    /* z-index: -1; */
+    z-index: -1;
     height: 250px;
     /* text-align: left; */
     border-bottom-left-radius: 20px;
