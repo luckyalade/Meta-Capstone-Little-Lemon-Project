@@ -43,13 +43,13 @@
 .form form {
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 20px;
+  padding: 23px 20px;
   border-radius: 20px;
   /* outline: 2px solid #a09b8e67; */
   width: 250px;
   position: relative;
   left: 180px;
-  top: 13px;
+  top: 9px;
 }
 
 label {
