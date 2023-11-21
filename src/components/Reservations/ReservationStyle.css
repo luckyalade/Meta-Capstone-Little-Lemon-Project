@@ -125,7 +125,9 @@ form button:hover {
   .form {
     display: block;
     position: relative;
-    left: -155px;
+    /* left: -155px; */
+    left: -120px;
+    /* margin: 0 auto; */
   }
 
   .reservation-details h2, p {
