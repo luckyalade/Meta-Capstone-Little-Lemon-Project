@@ -10,7 +10,6 @@ const ReservationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your reservation logic here (e.g., send data to a server, etc.)
     const reservationDetails = {
       name,
       date,
