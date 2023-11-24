@@ -47,7 +47,7 @@ const Navigation = () => {
     >
       <nav>
         <div>
-          <img src={Logo} alt="" height="43px" />
+          <img src={Logo} alt="" height="43px" aria-label="Company Logo" />
         </div>
         <ul className="link">
           <li>
@@ -57,6 +57,7 @@ const Navigation = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              role="link"
             >
               Home
             </Link>
@@ -68,6 +69,7 @@ const Navigation = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              role="link"
             >
               About
             </Link>
@@ -79,6 +81,7 @@ const Navigation = () => {
               smooth={true}
               offset={-35}
               duration={500}
+              role="link"
             >
               Menu
             </Link>
@@ -90,6 +93,7 @@ const Navigation = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              role="link"
             >
               Reservations
             </Link>
@@ -101,6 +105,7 @@ const Navigation = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              role="link"
             >
               Testimonials
             </Link>
@@ -112,12 +117,13 @@ const Navigation = () => {
               smooth={true}
               offset={-70}
               duration={500}
+              role="link"
             >
               Contact
             </Link>
           </li>
         </ul>
-        <HamburgerMenu />
+        <HamburgerMenu aria-controls="menu" />
       </nav>
     </div>
   );

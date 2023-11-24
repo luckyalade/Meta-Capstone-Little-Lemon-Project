@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./Testimonials.css";
 
+// Testimonial data array
 const testimonials = [
   {
     name: "Aaliyah",
@@ -35,27 +36,36 @@ const testimonials = [
   // Add more testimonials with images if needed
 ];
 
+// Testimonial component
 const Testimonial = () => {
   return (
+    // Testimonial section with background
     <div className="testimonial-bg" id="testimonial">
       <h2 className="testimonial-heading">Testimonials</h2>
       <div className="testimonial-container">
+        {/* Map through testimonials and render individual testimonial cards */}
         {testimonials.map((testimonial, index) => (
           <div className={`testimonial testimonial-${index + 1}`} key={index}>
+            {/* Testimonial name */}
             <h3 style={{ marginLeft: "10px" }}>{testimonial.name}</h3>
+            {/* Testimonial image */}
             <img
               src={testimonial.image}
               alt={`Testimonial ${index + 1}`}
               className={`testimonial-image`}
               width="207px"
             />
-            <p className={`testimonial-comment`}>{testimonial.comment}</p>
+            {/* Testimonial comment with ARIA live attribute for accessibility */}
+            <p className={`testimonial-comment`} aria-live="polite">
+              {testimonial.comment}
+            </p>
+            {/* Testimonial information, including star ratings */}
             <div
               className={`testimonial-info`}
               style={{ color: "yellowgreen", marginLeft: "9px" }}
             >
               <h4>
-                Ratings:{" "}
+                Ratings: {/* Display star ratings using FontAwesome icons */}
                 <span
                   className={`testimonial-stars`}
                   style={{ marginLeft: "10px", color: "yellowgreen" }}

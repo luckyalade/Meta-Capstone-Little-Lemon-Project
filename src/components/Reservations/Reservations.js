@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import "./ReservationStyle.css";
 
+// ReservationForm component
 const ReservationForm = () => {
+  // State hooks for form inputs
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
   const [guests, setGuests] = useState("");
-
   const [seatingPreference, setSeatingPreference] = useState("inside");
 
+  // Form submission handler
   const handleSubmit = (e) => {
     e.preventDefault();
     const reservationDetails = {
@@ -27,11 +29,14 @@ const ReservationForm = () => {
     setSeatingPreference("");
   };
 
+  // Render ReservationForm component
   return (
     <div className="Reservation-Form" id="reservations">
       <div className="reservation-section" id="reservation-section">
         <div className="reservation-details">
+          {/* Reservation form heading */}
           <h2>Reservation Form</h2>
+          {/* Reservation form description */}
           <p style={{ lineHeight: "1.5" }}>
             Lorem ipsum dolor sit amet consectetur <br />
             adipisicing elit. Commodi officiis deleniti ex repellendus
@@ -43,17 +48,21 @@ const ReservationForm = () => {
           </p>
         </div>
         <div className="form">
+          {/* Reservation form */}
           <form onSubmit={handleSubmit}>
-            <label>Name:</label>
+            {/* Name input */}
+            <label htmlFor="name">Name:</label>
             <br />
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
+              aria-labelledby="name"
             />
             <br />
 
+            {/* Date input */}
             <label htmlFor="date">Choose date:</label>
             <br />
             <input
@@ -61,9 +70,12 @@ const ReservationForm = () => {
               value={date}
               onChange={(e) => setDate(e.target.value)}
               required
+              aria-labelledby="date"
             />
             <br />
-            <label>Number of Guests:</label>
+
+            {/* Number of Guests input */}
+            <label htmlFor="guests">Number of Guests:</label>
             <br />
             <input
               type="number"
@@ -74,10 +86,13 @@ const ReservationForm = () => {
               min="1"
               max="10"
               id="guests"
+              aria-labelledby="guests"
             />
             <br />
-            <label for="res-time">Choose time:</label>
-            <select id="res-time ">
+
+            {/* Choose time input */}
+            <label htmlFor="res-time">Choose time:</label>
+            <select id="res-time" aria-labelledby="res-time">
               <option>17:00</option>
               <option>18:00</option>
               <option>19:00</option>
@@ -86,23 +101,33 @@ const ReservationForm = () => {
               <option>22:00</option>
             </select>
             <br />
-            <label>Seating Preference:</label>
+
+            {/* Seating Preference input */}
+            <label htmlFor="seatingPreference">Seating Preference:</label>
             <br />
             <select
               value={seatingPreference}
               onChange={(e) => setSeatingPreference(e.target.value)}
+              id="seatingPreference"
+              aria-labelledby="seatingPreference"
             >
               <option value="inside">Inside</option>
               <option value="outside">Outside</option>
             </select>
             <br />
+
+            {/* Occasion input */}
             <label htmlFor="occasion">Occasion:</label>
-            <select id="occasion">
+            <select id="occasion" aria-labelledby="occasion">
               <option>Birthday</option>
               <option>Anniversary</option>
             </select>
             <br />
-            <button type="submit">Reserve Table</button>
+
+            {/* Submit button */}
+            <button type="submit" aria-labelledby="submit">
+              Reserve Table
+            </button>
           </form>
         </div>
       </div>

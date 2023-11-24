@@ -1,9 +1,15 @@
 import "./About.css";
 import LemonSlices from "./lemon-slices-img.png";
 
+// About component to showcase Little Lemon restaurant information
 export default function About() {
   return (
-    <div className="about" id="about">
+    <div
+      className="about"
+      id="about"
+      role="region"
+      aria-label="About Little Lemon Restaurant"
+    >
       <div className="about-us">
         <div className="about-us-img">
           <img src={LemonSlices} alt="" width="300px" id="about-img" />

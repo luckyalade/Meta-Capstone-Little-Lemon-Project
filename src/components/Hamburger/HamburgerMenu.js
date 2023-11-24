@@ -3,13 +3,16 @@ import "./HamburgerMenu.css";
 import { Link } from "react-scroll";
 
 const HamburgerMenu = () => {
+  // State for managing menu open/close and scroll
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  // Function to toggle menu open/close
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
   };
 
+  // Effect to handle scroll and update isScrolled state
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -19,25 +22,35 @@ const HamburgerMenu = () => {
       }
     };
 
+    // Event listener for scroll
     window.addEventListener("scroll", handleScroll);
 
+    // Cleanup on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
+    // Main container for the hamburger menu
     <div
       className={`hamburger-menu ${isOpen ? "open" : ""}`}
       onClick={handleMenuToggle}
+      aria-expanded={isOpen} // ARIA attribute for menu state
+      role="button" // ARIA role to indicate interactivity
+      tabIndex="0" // ARIA attribute to make it focusable
     >
+      {/* Hamburger icon with spans */}
       <div className="hamburger-icon">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
       </div>
+
+      {/* Menu items */}
       <div className={`menu-items ${isOpen ? "open" : ""}`}>
+        {/* List of navigation links */}
         <ul
           style={{
             color: "#333",
@@ -50,8 +63,8 @@ const HamburgerMenu = () => {
             borderTopLeftRadius: "40px",
           }}
         >
+          {/* Each navigation link */}
           <li>
-            {" "}
             <Link
               to="home"
               spy={true}
@@ -63,7 +76,6 @@ const HamburgerMenu = () => {
             </Link>
           </li>
           <li>
-            {" "}
             <Link
               to="about"
               spy={true}

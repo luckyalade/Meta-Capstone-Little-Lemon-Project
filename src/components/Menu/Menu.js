@@ -11,14 +11,15 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
+ // Main container for the menu section with ARIA attributes
 export default function Menu() {
   return (
-    <div className="menu-bg" id="menu">
+    <div className="menu-bg" id="menu" role="region" aria-label="Menu">
       <div className="main-container">
         <h2>Menu</h2>
 
         <div className="Card-Container">
-          <div className="card">
+          <div className="card" role="menuitem">
             <img src={GreekSalad} alt="" width="207px" />
             <h3>
               Greek Salad <span>$30.21</span>
@@ -33,6 +34,8 @@ export default function Menu() {
                 marginLeft: "9px",
               }}
               className="rating-mobile"
+              role="img"
+              aria-label="Rating: 5 stars"
             >
               <h4>
                 Ratings:{" "}

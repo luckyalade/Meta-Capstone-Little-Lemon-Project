@@ -23,12 +23,15 @@ export default function Navigation() {
 
   return (
     <div>
+      {/* Footer section */}
       <div className="footer" id="contact">
         <div className="footer-logo">
           <img src={FooterLogo} alt="" />
         </div>
+        {/* Doormat Navigation */}
         <div className="doormat-navigation">
           <h3>Doormat Navigation</h3>
+          {/* onClick events for smooth scrolling to respective sections */}
           <p onClick={() => scrollToSection("home")}>Home</p>
           <p onClick={() => scrollToSection("about")}>About</p>
           <p onClick={() => scrollToSection("menu")}>Menu</p>
@@ -36,11 +39,14 @@ export default function Navigation() {
           <p onClick={() => scrollToSection("testimonial")}>Testimonial</p>
           <p onClick={() => scrollToSection("contact")}>Contact</p>
         </div>
+        {/* Contact Navigation */}
         <div className="contact-navigation" id="contact">
           <h3>Contact</h3>
+          {/* onClick events for smooth scrolling to respective sections */}
           <p onClick={() => scrollToSection("location")}>
+            {/* Font Awesome icon with color and ARIA label */}
             <span style={{ color: "#4F625C" }}>
-              <FontAwesomeIcon icon={faLocationDot} />
+              <FontAwesomeIcon icon={faLocationDot} aria-hidden="true" />
             </span>
             {"  "}
             Boulevard Crescent, <br />
@@ -48,37 +54,39 @@ export default function Navigation() {
           </p>
           <p onClick={() => scrollToSection("phone")}>
             <span style={{ color: "#4F625C" }}>
-              <FontAwesomeIcon icon={faAddressBook} />
+              <FontAwesomeIcon icon={faAddressBook} aria-hidden="true" />
             </span>
             <span> +123123123</span>
           </p>
           <p onClick={() => scrollToSection("email")}>
             <span style={{ color: "#4F625C" }}>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faEnvelope} aria-hidden="true" />
             </span>
             {"  "}
             order@littlelemon.com
           </p>
         </div>
+        {/* Social Media Links */}
         <div className="social-media-navigation">
           <h3>Social Media Links</h3>
           <p>
             <span style={{ color: "#1b1bbe" }}>
-              <FontAwesomeIcon icon={["fab", "facebook"]} />
+              {/* Font Awesome icon with color and ARIA label */}
+              <FontAwesomeIcon icon={["fab", "facebook"]} aria-hidden="true" />
             </span>
             {"   "}
             Facebook
           </p>
           <p>
             <span style={{ color: "brown" }}>
-              <FontAwesomeIcon icon={["fab", "instagram"]} />
+              <FontAwesomeIcon icon={["fab", "instagram"]} aria-hidden="true" />
             </span>
             {"   "}
             Instagram
           </p>
           <p>
             <span style={{ color: "lightblue" }}>
-              <FontAwesomeIcon icon={["fab", "twitter"]} />
+              <FontAwesomeIcon icon={["fab", "twitter"]} aria-hidden="true" />
             </span>
             {"   "}
             Twitter

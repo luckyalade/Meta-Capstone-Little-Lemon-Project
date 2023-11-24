@@ -1,15 +1,20 @@
+/*
+   Custom CSS Variables
+   Feel free to adjust values for your specific design needs
+*/
 :root {
-  --background-color: #F5F7F8;
-  --big-font: 3.3rem;
-  --h2-font: 2.6rem;
-  --p-font: 0.9rem;
-  --text-color: #302e29;
+  --background-color: #F5F7F8;   /* Overall background color */
+  --big-font: 3.3rem;            /* Large font size */
+  --h2-font: 2.6rem;             /* Heading 2 font size */
+  --p-font: 0.9rem;              /* Paragraph font size */
+  --text-color: #302e29;         /* Text color */
 }
 
+/* About section styling */
 .about {
   width: 100%;
-   background:  #add8e6;
-   border-top-left-radius: 100px;
+  background: #add8e6;            /* Light blue background color */
+  border-top-left-radius: 100px; /* Rounded top left corner */
 }
 
 .about .about-us {
@@ -21,6 +26,7 @@
   align-items: center;
 }
 
+/* About Us Image styling with hover effect */
 .about-us-img img {
   transition: 0.4s ease;
 }
@@ -29,6 +35,7 @@
   transform: translateX(8px);
 }
 
+/* Styling for Heading 2 and Paragraph in About Us section */
 .about-us h2 {
   font-size: var(--h2-font);
 }
@@ -38,31 +45,29 @@
   line-height: 30px;
 }
 
+/* Media query for responsive design at max-width: 768px */
 @media (max-width: 768px) {
- .about {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 800px;
-  /* height: auto; */
- }
+  .about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 800px;  /* Adjusted height for smaller screens */
+    /* height: auto; */  /* Uncomment if you want height to adjust automatically */
+  }
 
- .about .about-us {
-  display: flex;
-  flex-direction: column;
+  .about .about-us {
+    display: flex;
+    flex-direction: column;
+    /* height: 700px; */
+    /* height: auto; */
+    text-align: center;
+  }
 
-  /* height: 700px; */
-  /* height: auto; */
-  text-align: center;
- }
-
- .about-us-img img {
-  width: 200px;
-  /* margin-top: 10px; */
-  position: relative;
-  top: 44px;
+  /* Responsive styling for About Us Image */
+  .about-us-img img {
+    width: 200px;
+    /* margin-top: 10px; */
+    position: relative;
+    top: 44px;
+  }
 }
-}
-
-
-
