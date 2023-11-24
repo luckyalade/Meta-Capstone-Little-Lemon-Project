@@ -29,7 +29,8 @@ const Navigation = () => {
       style={{
         position: isScrolled ? "sticky" : "relative",
         top: 0,
-        backgroundColor: isScrolled ? "#7DD0B5" : "transparent",
+        // backgroundColor: isScrolled ? "#7DD0B5" : "transparent",
+        backgroundColor: isScrolled ? "transparent" : "transparent",
         boxShadow: isScrolled ? "0px 2px 5px rgba(0, 0, 0, 0.1)" : "none",
         backdropFilter: isScrolled ? "blur(10px)" : "none",
         padding: "1px 0",
