@@ -15,26 +15,30 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 library.add(faFacebook, faTwitter, faInstagram);
 
+export default function Navigation() {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
 
-export default function Login() {
   return (
     <div>
-      <div className="footer">
+      <div className="footer" id="contact">
         <div className="footer-logo">
           <img src={FooterLogo} alt="" />
         </div>
         <div className="doormat-navigation">
           <h3>Doormat Navigation</h3>
-          <p>Home</p>
-          <p>About</p>
-          <p>Menu</p>
-          <p>Reservations</p>
-          <p>Testimonial</p>
-          <p>Contact</p>
+          <p onClick={() => scrollToSection("home")}>Home</p>
+          <p onClick={() => scrollToSection("about")}>About</p>
+          <p onClick={() => scrollToSection("menu")}>Menu</p>
+          <p onClick={() => scrollToSection("reservations")}>Reservations</p>
+          <p onClick={() => scrollToSection("testimonial")}>Testimonial</p>
+          <p onClick={() => scrollToSection("contact")}>Contact</p>
         </div>
-        <div className="contact-navigation">
+        <div className="contact-navigation" id="contact">
           <h3>Contact</h3>
-          <p>
+          <p onClick={() => scrollToSection("location")}>
             <span style={{ color: "#4F625C" }}>
               <FontAwesomeIcon icon={faLocationDot} />
             </span>
@@ -42,14 +46,13 @@ export default function Login() {
             Boulevard Crescent, <br />
             Little Lemon HQ.
           </p>
-          <p>
+          <p onClick={() => scrollToSection("phone")}>
             <span style={{ color: "#4F625C" }}>
               <FontAwesomeIcon icon={faAddressBook} />
             </span>
-
             <span> +123123123</span>
           </p>
-          <p>
+          <p onClick={() => scrollToSection("email")}>
             <span style={{ color: "#4F625C" }}>
               <FontAwesomeIcon icon={faEnvelope} />
             </span>

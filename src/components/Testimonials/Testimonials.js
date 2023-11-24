@@ -37,7 +37,7 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <div className="testimonial-bg">
+    <div className="testimonial-bg" id="testimonial">
       <h2 className="testimonial-heading">Testimonials</h2>
       <div className="testimonial-container">
         {testimonials.map((testimonial, index) => (

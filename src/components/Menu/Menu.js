@@ -13,7 +13,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function Menu() {
   return (
-    <div className="menu-bg">
+    <div className="menu-bg" id="menu">
       <div className="main-container">
         <h2>Menu</h2>
 

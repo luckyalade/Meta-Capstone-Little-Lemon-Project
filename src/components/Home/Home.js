@@ -11,6 +11,7 @@ export default function Home() {
         borderBottomRightRadius: "300px",
         // outline: "1px solid #a09b8e67",
       }}
+      id="home"
     >
       <div className="article">
         <div className="right">
@@ -24,7 +25,7 @@ export default function Home() {
             vero ut ex.
           </p>
           <Button
-            link="/"
+            // link="../Reservations/Reservations.js"
             text="place an order"
             customClass="custom-style"
             id="customId"

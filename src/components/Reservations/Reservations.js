@@ -28,7 +28,7 @@ const ReservationForm = () => {
   };
 
   return (
-    <div className="Reservation-Form">
+    <div className="Reservation-Form" id="reservations">
       <div className="reservation-section" id="reservation-section">
         <div className="reservation-details">
           <h2>Reservation Form</h2>

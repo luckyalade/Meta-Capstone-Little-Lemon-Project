@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.footer .doormat-navigation p:hover {
+  color: #e1ec46;
+}
+
 .footer .contact-navigation  {
   font-size: var(--p-font);
   margin-left: 0px;

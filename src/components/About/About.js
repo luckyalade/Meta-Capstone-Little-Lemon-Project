@@ -3,7 +3,7 @@ import LemonSlices from "./lemon-slices-img.png";
 
 export default function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-us">
         <div className="about-us-img">
           <img src={LemonSlices} alt="" width="300px" id="about-img" />

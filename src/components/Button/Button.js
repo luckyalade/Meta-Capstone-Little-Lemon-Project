@@ -4,6 +4,10 @@ import "./Button.css";
 
 const Button = ({ link, text, customClass, customId }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <a
@@ -12,6 +16,7 @@ const Button = ({ link, text, customClass, customId }) => {
       id={`custom-button ${isHovered ? "hovered" : ""} ${customId}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      onClick={() => scrollToSection("reservations")}
     >
       {text}
     </a>
