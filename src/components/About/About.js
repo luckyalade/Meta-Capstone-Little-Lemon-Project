@@ -15,7 +15,7 @@ export default function About() {
           <img src={LemonSlices} alt="" width="300px" id="about-img" />
         </div>
         <div>
-          <h2>About Us</h2>
+          <h2 style={{ marginLeft: "12px" }}>About Us</h2>
           <p>
             Little Lemon, a Mediterranean gem, sprouted from the culinary
             passion of two friends, Alessia and Marco. Established in 2010 in

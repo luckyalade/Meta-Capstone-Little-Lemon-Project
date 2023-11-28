@@ -46,7 +46,7 @@ const Navigation = () => {
       }}
     >
       <nav>
-        <div>
+        <div style={{ marginLeft: "46px" }}>
           <img src={Logo} alt="" height="43px" aria-label="Company Logo" />
         </div>
         <ul className="link">

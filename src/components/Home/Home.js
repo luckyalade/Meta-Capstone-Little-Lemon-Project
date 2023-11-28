@@ -27,7 +27,7 @@ export default function Home() {
             <span>Welcome</span> to the Little Lemon Restaurant
           </h1>
           {/* Paragraph describing the restaurant */}
-          <p>
+          <p style={{ marginLeft: "3px" }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
             perferendis similique eius ipsam, culpa libero nemo aperiam cum
             veritatis voluptatibus maxime natus eligendi ratione magni nobis id

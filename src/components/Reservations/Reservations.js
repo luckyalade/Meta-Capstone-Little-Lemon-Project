@@ -35,7 +35,7 @@ const ReservationForm = () => {
       <div className="reservation-section" id="reservation-section">
         <div className="reservation-details">
           {/* Reservation form heading */}
-          <h2>Reservation Form</h2>
+          <h2 style={{ marginLeft: "8px" }}>Reservation Form</h2>
           {/* Reservation form description */}
           <p style={{ lineHeight: "1.5" }}>
             Lorem ipsum dolor sit amet consectetur <br />

@@ -30,7 +30,7 @@ export default function Navigation() {
         </div>
         {/* Doormat Navigation */}
         <div className="doormat-navigation">
-          <h3>Doormat Navigation</h3>
+          <h3 style={{ marginLeft: "10px" }}>Doormat Navigation</h3>
           {/* onClick events for smooth scrolling to respective sections */}
           <p onClick={() => scrollToSection("home")}>Home</p>
           <p onClick={() => scrollToSection("about")}>About</p>
@@ -41,7 +41,7 @@ export default function Navigation() {
         </div>
         {/* Contact Navigation */}
         <div className="contact-navigation" id="contact">
-          <h3>Contact</h3>
+          <h3 style={{ marginLeft: "11px" }}>Contact</h3>
           {/* onClick events for smooth scrolling to respective sections */}
           <p onClick={() => scrollToSection("location")}>
             {/* Font Awesome icon with color and ARIA label */}
