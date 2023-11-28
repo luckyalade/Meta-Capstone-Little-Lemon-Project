@@ -41,7 +41,7 @@ export default function Navigation() {
         </div>
         {/* Contact Navigation */}
         <div className="contact-navigation" id="contact">
-          <h3 style={{ marginLeft: "11px" }}>Contact</h3>
+          <h3 style={{ marginLeft: "13px" }}>Contact</h3>
           {/* onClick events for smooth scrolling to respective sections */}
           <p onClick={() => scrollToSection("location")}>
             {/* Font Awesome icon with color and ARIA label */}
@@ -49,7 +49,6 @@ export default function Navigation() {
               <FontAwesomeIcon icon={faLocationDot} aria-hidden="true" />
             </span>
             {"  "}
-            Boulevard Crescent, <br />
             Little Lemon HQ.
           </p>
           <p onClick={() => scrollToSection("phone")}>
